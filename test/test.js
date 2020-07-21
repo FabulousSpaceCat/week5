@@ -11,8 +11,6 @@ describe("Area of triangle function", function() {
     });
 });
 
-
-
 // This is testing an array, from class.  It's saying check the index of the array given (from 1-3) for an index of 4.  If 4 is not present, return -1.
 
 describe ("Array", function() {
@@ -22,3 +20,5 @@ describe ("Array", function() {
         });
     });
 });
+
+
