@@ -1,0 +1,11 @@
+*[data-title]::before { 
+    content: attr(data-title); 
+    display: block;
+    font-weight: bold;
+    padding: 4px 3px;
+}
+
+.lookAtMe {
+    color:red;
+}
+

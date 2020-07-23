@@ -18,7 +18,7 @@ let myCurrentBook = {
         document.getElementById("theBook").innerHTML += `<p><a href="${myCurrentBook.seller.URL}" alt="Buy ${myCurrentBook.title} for ${myCurrentBook.value} at ${myCurrentBook.seller.name} 's website ${myCurrentBook.seller.URL} .">Buy "${myCurrentBook.title}" for ${myCurrentBook.price} @ ${myCurrentBook.seller.name}</p>`;
     },
     learnMore: function() {
-        document.getElementById("theBook").innerHTML = `<h2>Title: ${myCurrentBook.title}</h2><h3>Genre: ${myCurrentBook.genre}</h3><h3>Series: Book ${myCurrentBook.series.index} of ${myCurrentBook.series.name}</h3><h3>From the Cover:</h3>${myCurrentBook.desc}`;
+        document.getElementById("theBook").innerHTML = `<h2>Title: ${myCurrentBook.title}</h2><h2>Author: ${myCurrentBook.author}</h2><h3>Genre: ${myCurrentBook.genre}</h3><h3>Series: Book ${myCurrentBook.series.index} of ${myCurrentBook.series.name}</h3><h3>From the Cover:</h3>${myCurrentBook.desc}`;
     }
 }
 
