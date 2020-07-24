@@ -61,10 +61,13 @@ document.body.lastElementChild.setAttribute("id", "readMoreBtn"); // Set an id f
 document.getElementById("readMoreBtn").textContent = "You should read more!"; // Give it some text
 
 function readMore() { // When you click it
+    if (document.getElementById("more").children[1].children[0].children[1].textContent == relatedNovels[1]) {
+        document.getElementById("more").children[1].children[0].children[1].style.display = "none"; // This is actually a graphic novel; nobody saw that (but I don't alter the array - I could correct it at this point but then I would have to come up with a different solution for hiding the list entry)
+    }
     window.open("https://en.wikipedia.org/wiki/Brandon_Sanderson#Bibliography","_blank"); // It opens a page to Wikipedia's bibliography for Brandon Sanderson
-    document.getElementById("more").children[1].children[0].children[1].style.display = "none"; // This is actually a graphic novel; nobody saw that
-                                                                                                // Also when I told that list item to be display:none it actually reordered the list, so that was cool
 }
+
+// When you click the button, it should hide the second element of the second nested list.  As an added bonus, the list renumbers itself because it's smart.  It should also open a link to the author's wiki bibliography section.  On subsequent clicks, it'll only open the link.
 
 document.getElementById("readMoreBtn").addEventListener("click", readMore); 
 
