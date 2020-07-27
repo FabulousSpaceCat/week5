@@ -142,6 +142,7 @@ function nextMoon() {
     else {
         // In case I never get back to this
         document.getElementById("demo").innerHTML = `This project was made for the year 2020 and may need to be updated for the current year.  If you'd like to see how it worked, set your system time to a date in 2020.  (I would understand if you really don't want to relive that year, though.)`
+        tick = "";
     }
 }
 
@@ -152,8 +153,8 @@ function isSameDay() {
     Start howling, friends, it's
     <br>
     ${moonName} Moon
-    <p><img src="images/${moonPic}" alt="${moonName} Moon"></p>`
-    tick = ""
+    <p><img src="images/${moonPic}" alt="${moonName} Moon"></p>`;
+    tick = "";
 }
 
 // We get a true or false for if it's the same day as a moon or not
