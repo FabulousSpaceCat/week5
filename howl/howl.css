@@ -1,4 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+@import url('https://fonts.googleapis.com/css?family=Cagliostro');
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+    
+
 body {
     background-color:black;
     color:grey;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    text-align: center;
+}
+#counter {
+    font-family: "VT323", "Courier New", Courier, monospace;
+    font-size: 4em;
+    color: #cacaca;
+    text-shadow: 
+    #5c5c5c -1px -1px 2px,  
+    #5c5c5c 1px -1px 2px,
+    #5c5c5c -1px 1px 2px,
+    #5c5c5c 1px 1px 2px,
+    rgba(255,255,255,.5) 0 0 20px, 
+    rgba(255,255,255,.5) 0 0 15px;
+}
+#moon {
+    margin-top:-40px;
+    font-family: "Cagliostro", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size:2em;
+    color: #cacaca;
+    text-shadow:
+    #5c5c5c -1px -1px 1px,  
+    #5c5c5c 1px -1px 1px,
+    #5c5c5c -1px 1px 1px,
+    #5c5c5c 1px 1px 1px,
+    rgba(255,255,255,.5) 0 0 15px, 
+    rgba(255,255,255,.5) 0 0 10px,
+    rgba(255,255,255,.5) 0 0 5px;
+}
+.howl {
+    font-family: "Bangers", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:1.5em;
+    color: rgb(206, 30, 30);
+    text-shadow:
+    #741616 -1px -1px 1px,  
+    #741616 1px -1px 1px,
+    #741616 -1px 1px 1px,
+    #741616 1px 1px 1px,
+    rgba(255,255,255, 0.5) 0 0 15px, 
+    rgba(255,255,255,.5) 0 0 10px,
+    rgba(255,255,255,.5) 0 0 5px;
+    vertical-align: middle;
+    display: inline-block;  /* Evidently you can't rotate an inline element */
+    rotate:-10deg;
+}
+.name {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow:
+    #5c5c5c -1px -1px 2px,  
+    #5c5c5c 1px -1px 2px,
+    #5c5c5c -1px 1px 2px,
+    #5c5c5c 1px 1px 2px,
+    rgba(255,255,255,.5) 0 0 25px, 
+    rgba(255,255,255,.5) 0 0 20px,
+    rgba(255,255,255,.5) 0 0 10px,
+    rgba(255,255,255,.5) 0 0 5px;
 }
