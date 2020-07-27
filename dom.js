@@ -52,18 +52,24 @@ insertHere = document.getElementById("more").children[1].firstElementChild; // s
 relatedNovels.forEach(makeList); // set the list for the second series
 
 
-// Add a button to the bottom of the page, not in a list, with an event listener for if it's clicked
+// Add a button to the bottom of the page, not in a list, with an event listener for if it's clicked and don't be lazy this time
+// Make sure the button hides an element in one of the nested lists
 
 document.body.appendChild(document.createElement("button")); // I know it's bad practice to have regular body elements after the script elements but I am tired
                                                              // Also that's an argument to put them in the head for deferring like Harcourt mentioned
-document.body.lastElementChild.setAttribute("id", "readMore"); // Set an id for the button
-document.getElementById("readMore").textContent = "You should read more!"; // Give it some text
+document.body.lastElementChild.setAttribute("id", "readMoreBtn"); // Set an id for the button
+document.getElementById("readMoreBtn").textContent = "You should read more!"; // Give it some text
 
-document.getElementById("readMore").onclick = function() { // When you click it
+function readMore() { // When you click it
+    if (document.getElementById("more").children[1].children[0].children[1].textContent == relatedNovels[1]) {
+        document.getElementById("more").children[1].children[0].children[1].style.display = "none"; // This is actually a graphic novel; nobody saw that (but I don't alter the array - I could correct it at this point but then I would have to come up with a different solution for hiding the list entry)
+    }
     window.open("https://en.wikipedia.org/wiki/Brandon_Sanderson#Bibliography","_blank"); // It opens a page to Wikipedia's bibliography for Brandon Sanderson
 }
 
+// When you click the button, it should hide the second element of the second nested list.  As an added bonus, the list renumbers itself because it's smart.  It should also open a link to the author's wiki bibliography section.  On subsequent clicks, it'll only open the link.
 
+document.getElementById("readMoreBtn").addEventListener("click", readMore); 
 
 
 
