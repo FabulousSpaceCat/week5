@@ -1,3 +1,6 @@
+# working image files
+*.sai
+
 # Logs
 logs
 *.log
