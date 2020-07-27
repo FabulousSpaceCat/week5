@@ -1,4 +1,5 @@
-// title , author name, genre, short description, price, seller, buyNow -method that shows price and seller, learnMore - method that shows name, genre, and short description.
+// title, author, genre, series [name and index], description, price, seller [name and url]
+// buyNow [method that shows price and seller], learnMore [method that shows everything else really]
 
 let myCurrentBook = {
     title: "The Final Empire",
