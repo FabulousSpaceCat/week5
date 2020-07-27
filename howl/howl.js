@@ -32,19 +32,29 @@ let deadline;
 let moonName;
 let moonPic;
 
+// And also it needs to count, I think this will be okay since the variables will be set by the time it runs
+
+let tick;
+
 // Set countdown timer and do the math and make variables for the math
 
 function countdown() { 
-    let time = deadline - currentDay.getTime();
+    let now = new Date().getTime();
+    let time = deadline - now;
     let days = Math.floor(time / (1000 * 60 * 60 * 24));
     let hours = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let mins = Math.floor((time % (1000 * 60 * 60 )) / (1000 * 60));
+    let secs = Math.floor((time % (1000 * 60 )) / 1000);
     // Display countdown timer block
     document.getElementById("demo").innerHTML = `
-        ${days} days ${hours} hours and ${mins} minutes until it's time to howl at the
+        ${days} D ${hours} H ${mins} M ${secs} S
+        <br>
+        until it's time to howl at the
         <br>
         ${moonName} Moon
         <p><img src="images/${moonPic}" alt="${moonName} Moon"></p>`
+    //repeat as needed
+    tick = setInterval(countdown, 1000);
 }
 // We should determine the upcoming moon, which we can do using epoch time:
 // Ideally we would be making a ticking timer but not yet, I just need to make the idea work first
@@ -143,6 +153,7 @@ function isSameDay() {
     <br>
     ${moonName} Moon
     <p><img src="images/${moonPic}" alt="${moonName} Moon"></p>`
+    tick = ""
 }
 
 // We get a true or false for if it's the same day as a moon or not
@@ -232,3 +243,4 @@ function checkSameDay() {
 
 nextMoon();
 checkSameDay();
+
