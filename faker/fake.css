@@ -1,1 +1,19 @@
 /* We're going to need a little more styling here, but not a lot, W3.css took care of the heavy lifting */
+
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+h1 {
+    font-family: 'Satisfy', cursive;
+    font-size: 4em;
+}
+
+
+#card, #buttons{
+    margin:auto;
+    float: none;
+    padding:0;
+    min-width: max-content;
+}
+#match img {
+    max-width:400px;
+}
