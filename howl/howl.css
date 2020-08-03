@@ -22,7 +22,7 @@ body {
     rgba(255,255,255,.5) 0 0 20px, 
     rgba(255,255,255,.5) 0 0 15px;
 }
-#moon {
+#moon, #today {
     margin-top:-40px;
     font-family: "Cagliostro", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size:2em;
@@ -35,6 +35,9 @@ body {
     rgba(255,255,255,.5) 0 0 15px, 
     rgba(255,255,255,.5) 0 0 10px,
     rgba(255,255,255,.5) 0 0 5px;
+}
+#today {
+    margin-top:100px;
 }
 .howl {
     font-family: "Bangers", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
