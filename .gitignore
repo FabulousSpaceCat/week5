@@ -1,5 +1,6 @@
 # working image files
 *.sai
+*.psd
 
 # Logs
 logs
