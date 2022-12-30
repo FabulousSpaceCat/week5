@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/FabulousSpaceCat/week5#readme",
   "dependencies": {
-    "mocha": "^8.0.1"
+    "mocha": "^8.4.0"
   }
 }
